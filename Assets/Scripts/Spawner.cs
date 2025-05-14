@@ -5,10 +5,10 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private Enemy _enemyPrefab;
 
-    private ObjectPool<Enemy> _enemyPool;
-
     private readonly int _defaultCapacityPool = 5;
     private readonly int _maxSizePool = 10;
+
+    private ObjectPool<Enemy> _enemyPool;
 
     private void Awake()
     {

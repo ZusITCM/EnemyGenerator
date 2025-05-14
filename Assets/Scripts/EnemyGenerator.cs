@@ -6,11 +6,11 @@ public class EnemyGenerator : MonoBehaviour
 {
     [SerializeField] private List<Spawner> _spawners;
 
-    private Coroutine _coroutine;
-
     private readonly float _delay = 2.0f;
 
     private readonly bool _isSpawning = true;
+
+    private Coroutine _coroutine;
 
     private void OnEnable()
     {
